@@ -2,9 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | NodeJS Assignment 2</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Home Page</h1>
+    <header>
+        <nav class="navbar">
+            <a href="/home.html" class="logo">
+                <div class="logo-icon">JS</div>
+                <span class="logo-text">NodeJS Assignment 2</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pill-badge">✨ Express &amp; Static Hosting</div>
+        <h1 class="hero-title">Interactive Assignment Showcase</h1>
+        <p class="hero-lead">
+            Explore Express.js server endpoints, dynamic file parsing, HTML templates, and static file hosting built for NodeJS Assignment 2.
+        </p>
+
+        <div class="btn-row">
+            <a href="#exercises" class="btn btn-primary">Explore API Endpoints</a>
+            <a href="/about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <div class="cards-grid" id="exercises">
+            <div class="card">
+                <div class="card-icon">📄</div>
+                <h3>Exercise 1: Single Page</h3>
+                <p>Serves <code>lib/index.html</code> with HTTP 200 status and <code>text/html</code> MIME type.</p>
+                <a href="/api/exercise1" target="_blank" class="btn btn-secondary" style="margin-top: 1.25rem; width: 100%; justify-content: center;">Test /api/exercise1 &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>Exercise 2: File to HTML Table</h3>
+                <p>Parses delimiter-separated user data from <code>lib/users.txt</code> into a dynamic HTML table.</p>
+                <a href="/api/exercise2" target="_blank" class="btn btn-secondary" style="margin-top: 1.25rem; width: 100%; justify-content: center;">Test /api/exercise2 &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📑</div>
+                <h3>Exercise 3: Dedicated Pages</h3>
+                <p>Routes dedicated endpoints for Home, About, and Contact pages loaded from <code>lib/</code>.</p>
+                <div style="display: flex; gap: 0.5rem; margin-top: 1.25rem; flex-wrap: wrap;">
+                    <a href="/api/exercise3/pages/home" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Home</a>
+                    <a href="/api/exercise3/pages/about" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">About</a>
+                    <a href="/api/exercise3/pages/contact" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Contact</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>Exercise 4: Static Site Hosting</h3>
+                <p>Static website hosting serving HTML, CSS, and JS assets automatically from the <code>public/</code> folder.</p>
+                <div style="display: flex; gap: 0.5rem; margin-top: 1.25rem; flex-wrap: wrap;">
+                    <a href="/home.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Home</a>
+                    <a href="/about.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">About</a>
+                    <a href="/contact.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Contact</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shanku &bull; NodeJS Assignment 2 &bull; Deployed on Vercel</p>
+    </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>

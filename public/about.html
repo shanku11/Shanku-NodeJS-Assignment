@@ -2,9 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page | NodeJS Assignment 2</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>About Page</h1>
+    <header>
+        <nav class="navbar">
+            <a href="/home.html" class="logo">
+                <div class="logo-icon">JS</div>
+                <span class="logo-text">NodeJS Assignment 2</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="pill-badge">ℹ️ Overview</div>
+        <h1 class="hero-title">About This Assignment</h1>
+        <p class="hero-lead">
+            This project showcases server-side JavaScript capabilities using Express.js to create robust web APIs, dynamic content rendering, and static file delivery.
+        </p>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Express.js Architecture</h3>
+                <p>Modular route handling, custom middleware, and static asset streaming optimized for high throughput.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">☁️</div>
+                <h3>Serverless on Vercel</h3>
+                <p>Configured with serverless function handlers and rewrites for instantaneous scalability and zero maintenance.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Modern Visual Design</h3>
+                <p>Glassmorphism, vibrant gradients, responsive flexbox/grid layouts, and interactive micro-animations.</p>
+            </div>
+        </div>
+
+        <div class="btn-row" style="margin-top: 3rem;">
+            <a href="/home.html" class="btn btn-primary">&larr; Back to Home</a>
+            <a href="/contact.html" class="btn btn-secondary">Contact Developer</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shanku &bull; NodeJS Assignment 2 &bull; Deployed on Vercel</p>
+    </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>

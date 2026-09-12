@@ -157,41 +157,11 @@ app.get('/contact.html', (req, res) => {
     });
 });
 
-// Root URL handler: serves lib/index.html
+// Root URL handler: redirect to /home.html (as specified in Exercise 4)
 app.get('/', (req, res) => {
-    const filePath = getLibPath('index.html');
-    fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(200).type('text/html').send(`
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>NodeJS Assignment 2</title>
-                    <style>
-                        body { font-family: sans-serif; padding: 2rem; }
-                        ul { line-height: 2; }
-                    </style>
-                </head>
-                <body>
-                    <h1>NodeJS Assignment 2</h1>
-                    <ul>
-                        <li><a href="/api/exercise1">Exercise 1: /api/exercise1</a></li>
-                        <li><a href="/api/exercise2">Exercise 2: /api/exercise2</a></li>
-                        <li><a href="/api/exercise3/pages/home">Exercise 3: /api/exercise3/pages/home</a></li>
-                        <li><a href="/api/exercise3/pages/about">Exercise 3: /api/exercise3/pages/about</a></li>
-                        <li><a href="/api/exercise3/pages/contact">Exercise 3: /api/exercise3/pages/contact</a></li>
-                        <li><a href="/home.html">Exercise 4: /home.html</a></li>
-                        <li><a href="/about.html">Exercise 4: /about.html</a></li>
-                        <li><a href="/contact.html">Exercise 4: /contact.html</a></li>
-                    </ul>
-                </body>
-                </html>
-            `);
-        }
-        res.status(200).type('text/html').send(data);
-    });
+    res.redirect('/home.html');
 });
+
 
 // Global error handler
 app.use((err, req, res, next) => {
