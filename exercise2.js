@@ -55,10 +55,13 @@ app.get(['/api/exercise2', '/api/exercise2/'], (req, res) => {
     });
 });
 
-// Start the server
-const server = app.listen(PORT, () => {
-    console.log(`Exercise 2 Server is listening on port ${PORT}`);
-    console.log(`Endpoint: http://localhost:${PORT}/api/exercise2`);
-});
+// Start the server if executed directly
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Exercise 2 Server is listening on port ${PORT}`);
+        console.log(`Endpoint: http://localhost:${PORT}/api/exercise2`);
+    });
+}
 
-module.exports = { app, server, convertTxtToTable };
+module.exports = app;
+module.exports.convertTxtToTable = convertTxtToTable;

@@ -10,10 +10,12 @@ app.get(['/api/exercise1', '/api/exercise1/'], (req, res) => {
     res.status(200).type('text/html').sendFile(filePath);
 });
 
-// Start the server
-const server = app.listen(PORT, () => {
-    console.log(`Exercise 1 Server is listening on port ${PORT}`);
-    console.log(`Endpoint: http://localhost:${PORT}/api/exercise1`);
-});
+// Start the server if executed directly
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Exercise 1 Server is listening on port ${PORT}`);
+        console.log(`Endpoint: http://localhost:${PORT}/api/exercise1`);
+    });
+}
 
-module.exports = { app, server };
+module.exports = app;
