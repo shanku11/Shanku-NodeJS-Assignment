@@ -1,0 +1,16 @@
+Name | Age | Gender | City
+Abhi | 25 | Male | Hyderabad
+Babu | 21 | Male | Vizag
+Chitra | 25 | Female | Vijayawada
+Deepak | 30 | Male | Delhi
+Emma | 27 | Female | Lucknow
+Abhi | 25 | Male | Hyderabad
+Babu | 21 | Male | Vizag
+Chitra | 25 | Female | Vijayawada
+Deepak | 30 | Male | Delhi
+Emma | 27 | Female | Lucknow
+Abhi | 25 | Male | Hyderabad
+Babu | 21 | Male | Vizag
+Chitra | 25 | Female | Vijayawada
+Deepak | 30 | Male | Delhi
+Emma | 27 | Female | Lucknow

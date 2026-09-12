@@ -1,0 +1,24 @@
+{
+  "name": "shanku-nodejs-assignment2",
+  "version": "1.0.0",
+  "description": "NodeJS Assignment 2 - Express web servers and static site hosting",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "ex1": "node exercise1.js",
+    "ex2": "node exercise2.js",
+    "ex3": "node exercise3.js",
+    "ex4": "node exercise4.js",
+    "test": "node test-endpoints.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "assignment"
+  ],
+  "author": "Shanku",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
